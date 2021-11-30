@@ -8,6 +8,19 @@ body {
   grid-template-rows: min-content 1fr min-content;
 }
 
+.hidden {
+  opacity: 0;
+}
+
+.visible {
+  opacity: 1;
+}
+
+.animated {
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+
 .content {
   font-size: 20px;
   font-family: Ubuntu, Arial, sans-serif;

@@ -1,7 +1,7 @@
 // import external dependencies
 import 'jquery';
 import 'owl.carousel';
-import 'jquery-npm';
+import 'jquery-viewport-checker';
 
 // Import everything from autoload
 import './autoload/**/*'

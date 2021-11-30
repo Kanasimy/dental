@@ -22,8 +22,9 @@ export default {
       },
     })
     // Анимация
-    jQuery(document).ready(function($) {
-      $('.animate').viewportChecker();
+    $('.animate').addClass('hidden').viewportChecker({
+      classToAdd: 'visible animated fadeInDown',
+      offset: 0,
     });
   },
 };
