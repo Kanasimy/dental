@@ -1,0 +1,16 @@
+.about {
+  background-color: $gray-100;
+  padding: 40px 0;
+
+  &__gallery {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(200px, 1fr));
+    grid-gap: 5px;
+  }
+
+  &__img {
+    img {
+      width: 100%;
+    }
+  }
+}

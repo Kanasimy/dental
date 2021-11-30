@@ -1,0 +1,30 @@
+.accordion {
+  .card {
+    background-color: $white;
+    padding: 10px 30px;
+    margin-bottom: 10px;
+    position: relative;
+    font-size: 20px;
+    font-style: italic;
+
+    &-header {
+      .btn-link {
+        color: $body-color;
+        font-size: 20px;
+
+        &::before {
+          content: "";
+          background-image: url("../../images/svg/arrow-accordion.svg");
+          height: 18px;
+          width: 18px;
+          display: inline-block;
+          transform: rotate(180deg);
+        }
+
+        &.collapsed::before {
+          transform: rotate(0);
+        }
+      }
+    }
+  }
+}

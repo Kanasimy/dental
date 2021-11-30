@@ -1,0 +1,66 @@
+.site-info {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: 260px auto 176px 253px;
+  margin: 15px 0;
+
+  &__where {
+    vertical-align: bottom;
+
+    &::before {
+      content: "";
+      display: inline-block;
+      background-image: url("../../images/icons/address.png");
+      height: 25px;
+      width: 17px;
+    }
+  }
+
+  &__consultation {
+    text-align: right;
+    padding-top: 8px;
+  }
+
+  &__phone {
+    font-size: 20px;
+    font-weight: bold;
+    color: $danger;
+    margin-top: 10px;
+
+    a {
+      border-bottom: 1px dashed $danger;
+      text-decoration: none;
+    }
+  }
+
+  &__social {
+    display: flex;
+    list-style: none;
+    justify-items: center;
+    align-items: center;
+    gap: 30px;
+    padding: 0;
+    margin: 0;
+  }
+
+  &__youtube {
+    display: inline-block;
+    background-image: url("../../images/social/youtube.png");
+    width: 35px;
+    height: 35px;
+  }
+
+  &__vk {
+    display: inline-block;
+    background-image: url("../../images/social/vk.png");
+    width: 35px;
+    height: 35px;
+  }
+
+  &__ok {
+    display: inline-block;
+    background-image: url("../../images/social/ok.png");
+    width: 35px;
+    height: 35px;
+  }
+}

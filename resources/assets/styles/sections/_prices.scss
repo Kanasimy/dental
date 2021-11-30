@@ -1,0 +1,20 @@
+.prices {
+  background-color: $gray-100;
+  padding: 40px 0;
+}
+
+.table--prices {
+  td:first-child {
+    width: 60%;
+    text-align: center;
+  }
+
+  td:nth-child(2) {
+    width: 40%;
+    text-align: right;
+
+    .btn {
+      margin-left: 40px;
+    }
+  }
+}

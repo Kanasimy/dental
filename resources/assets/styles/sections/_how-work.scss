@@ -1,0 +1,52 @@
+.how-work {
+  padding: 80px 0 65px 0;
+  background: $gray-100;
+
+  &__shema {
+    position: relative;
+    height: 457px;
+    width: 724px;
+    margin: 40px auto;
+  }
+
+  &__list {
+    text-align: center;
+    list-style: none;
+    font-size: 20px;
+    line-height: 1.2;
+
+    span {
+      color: $danger;
+      padding-right: 7px;
+      font-weight: bold;
+    }
+
+    li:first-child {
+      position: absolute;
+      left: -144px;
+      top: 235px;
+      width: 200px;
+    }
+
+    li:nth-child(2) {
+      position: absolute;
+      left: -14px;
+      top: 465px;
+      width: 204px;
+    }
+
+    li:nth-child(3) {
+      position: absolute;
+      left: 528px;
+      top: 465px;
+      width: 227px;
+    }
+
+    li:nth-child(4) {
+      position: absolute;
+      right: -144px;
+      top: 243px;
+      width: 200px;
+    }
+  }
+}

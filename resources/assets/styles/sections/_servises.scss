@@ -1,0 +1,29 @@
+.servises {
+  padding: 80px 0;
+  background: $gray-100;
+
+  &__item {
+    display: grid;
+    grid-template-columns: min-content;
+    grid-template-rows: 1fr minmax(auto, 100px);
+    justify-content: center;
+  }
+
+  &__cat {
+    background-color: $white;
+    min-height: 130px;
+    font-size: 20px;
+    font-weight: bold;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    text-align: center;
+    text-decoration: none;
+  }
+
+  &__list {
+    margin-top: 50px;
+  }
+}

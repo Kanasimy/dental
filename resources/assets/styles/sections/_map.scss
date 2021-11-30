@@ -1,0 +1,14 @@
+.map {
+  background-color: $gray-100;
+  padding: 40px 0;
+
+  &__address {
+    text-align: center;
+    font-size: 20px;
+    color: $danger;
+
+    em {
+      color: $gray-500;
+    }
+  }
+}

@@ -1,0 +1,45 @@
+.advantages {
+  background-color: $gray-100;
+  padding: 40px 0;
+
+  &__scheme {
+    position: relative;
+    margin: 0 auto;
+    width: 1148px;
+    height: 538px;
+  }
+
+  &__list {
+    list-style: none;
+    font-size: 20px;
+    text-align: center;
+    line-height: 1.1;
+
+    li:first-child {
+      position: absolute;
+      top: 24px;
+      left: 55px;
+      width: 210px;
+    }
+
+    li:nth-child(2) {
+      position: absolute;
+      bottom: 97px;
+      width: 232px;
+    }
+
+    li:nth-child(3) {
+      position: absolute;
+      top: 24px;
+      right: 26px;
+      width: 270px;
+    }
+
+    li:nth-child(4) {
+      position: absolute;
+      bottom: 97px;
+      right: 32px;
+      width: 266px;
+    }
+  }
+}

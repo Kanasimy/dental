@@ -1,0 +1,11 @@
+.footer .nav li {
+  @extend .nav-item;
+}
+
+.footer .nav a {
+  @extend .nav-link;
+
+  color: $dark;
+  font-size: 20px;
+  font-weight: bold;
+}
