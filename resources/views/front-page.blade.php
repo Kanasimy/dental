@@ -457,4 +457,5 @@
     </address>
     </div>
   </section>
+    <h2>{{ $greeting }} friend!</h2>
 @endsection
