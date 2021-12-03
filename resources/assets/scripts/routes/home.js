@@ -5,7 +5,7 @@ export default {
   },
   finalize() {
     // JavaScript to be fired on the home page, after the init JS
-    $('.certificates-slider').owlCarousel({
+    $('.certificates__slider').owlCarousel({
       loop: true,
       margin: 100,
       nav: true,

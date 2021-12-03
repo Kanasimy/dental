@@ -1,0 +1,44 @@
+.testimonial {
+  &-inner {
+    position: relative;
+    background: $white;
+    padding: 8px 0 50px 0;
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.05);
+    min-height: 305px;
+    margin-top: 40px;
+  }
+
+  &-image {
+    border: 1px solid $gray-500;
+    margin: 0 0 8px 20px;
+    display: inline-block;
+  }
+
+  p {
+    margin: 0 20px;
+  }
+
+  .maybe-clear {
+    border-top: 1px solid $gray-500;
+    margin-bottom: 10px;
+  }
+
+  &-data {
+    font-style: italic;
+    font-size: 16px;
+    color: $gray-500;
+    position: absolute;
+    bottom: 8px;
+    left: 20px;
+  }
+
+  &-name {
+    position: absolute;
+    left: 100px;
+    top: 30px;
+    text-transform: uppercase;
+    color: $danger;
+    font-weight: bold;
+    font-style: normal;
+  }
+}

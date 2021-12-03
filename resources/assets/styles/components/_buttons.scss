@@ -54,7 +54,7 @@ $btn-block-spacing-y: 0.5rem !default;
 
 .btn-order {
   position: relative;
-  min-width: 250px;
+  max-width: 250px;
   min-height: 50px;
   color: $white;
   text-transform: uppercase;
@@ -132,6 +132,9 @@ $btn-block-spacing-y: 0.5rem !default;
   }
 
   &:hover {
+    text-decoration: none;
+    color: $white;
+
     &::after {
       background: $danger;
       transform: translateX(75%);
@@ -154,15 +157,19 @@ $btn-block-spacing-y: 0.5rem !default;
     }
   }
 
-  &.btn-order--servises:hover .icon-container {
-    transform: translateX(65%);
+  &.btn-order--servises:hover {
+    color: $danger;
 
-    .icon svg {
-      fill: $white;
+    .icon-container {
+      transform: translateX(65%);
+
+      .icon svg {
+        fill: $white;
+      }
     }
-  }
 
-  &.btn-order--servises:hover::after {
-    transform: translateX(80%);
+    &::after {
+      transform: translateX(80%);
+    }
   }
 }
