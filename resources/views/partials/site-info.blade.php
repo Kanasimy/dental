@@ -1,4 +1,4 @@
-<div class="container">
+<div class="container-lg">
   <div class="site-info">
     @php the_custom_logo() @endphp
     <adress class="site-info__adress">
