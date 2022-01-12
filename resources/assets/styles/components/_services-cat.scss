@@ -1,0 +1,44 @@
+.services-cat {
+  list-style: none;
+  padding: 0;
+  margin: 50px 0 50px;
+}
+
+.services-cat > li {
+  h3 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 30px;
+  }
+
+  text-align: center;
+  display: block;
+  margin: 50px 0;
+}
+
+.services-cat > li > ul {
+  list-style: none;
+  display: flex;
+  flex-basis: auto;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 35px 40px;
+  padding: 0;
+  margin: 0;
+}
+
+.services-cat > li > ul > li {
+  border: 1px solid red;
+  background: $white;
+  min-width: 250px;
+  font-size: 16px;
+
+  a {
+    &:hover {
+      text-decoration: none;
+    }
+
+    padding: 7px 0;
+    display: block;
+  }
+}

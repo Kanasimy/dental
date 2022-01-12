@@ -1,0 +1,13 @@
+.breadcrumbs {
+  font-size: 14px;
+  color: $danger;
+  padding: 20px 0;
+
+  a {
+    border-bottom: 1px dashed $danger;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}

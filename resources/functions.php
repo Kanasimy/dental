@@ -58,7 +58,10 @@ array_map(function ($file) use ($sage_error) {
     if (!locate_template($file, true, true)) {
         $sage_error(sprintf(__('Error locating <code>%s</code> for inclusion.', 'sage'), $file), 'File not found');
     }
-}, ['helpers', 'setup', 'filters', 'admin', 'fields']);
+}, ['helpers', 'setup', 'filters', 'admin', 'fields']
+
+
+);
 
 /**
  * Here's what's happening with these hooks:
@@ -110,13 +113,36 @@ function isa_remove_jquery_migrate( &$scripts ) {
 }
 add_filter( 'wp_default_scripts', 'isa_remove_jquery_migrate' );
 
-if ( ! file_exists( get_template_directory() . '/views/includes//wp-bootstrap-navwalker.php' ) ) {
-    return new WP_Error( 'wp-bootstrap-navwalker-missing', __( 'It appears the wp-bootstrap-navwalker.php file may be missing.', 'wp-bootstrap-navwalker' ) );
-} else {
-    // file exists... require it.
-    require_once get_template_directory() . '/views/includes/wp-bootstrap-navwalker.php';
-}
+/* Меню для bootstrap */
+require_once get_template_directory() . '/views/includes/wp-bootstrap-navwalker.php';
 
 /* Disable Widgets Block Editor */
 add_filter( 'use_widgets_block_editor', '__return_false' );
+
+require_once get_template_directory() . '/views/includes/service.php';
+add_action( 'init', 'create_service' );
+add_action( 'init', 'register_post_types' );
+flush_rewrite_rules();
+
+require_once get_template_directory() . '/views/includes/breadcrumbs.php';
+
+require_once get_template_directory() . '/views/includes/services-cat.php';
+
+## Отключает Гутенберг (новый редактор блоков в WordPress).
+## ver: 1.2
+if( 'disable_gutenberg' ){
+    remove_theme_support( 'core-block-patterns' ); // WP 5.5
+
+    add_filter( 'use_block_editor_for_post_type', '__return_false', 100 );
+
+    // отключим подключение базовых css стилей для блоков
+    // ВАЖНО! когда выйдут виджеты на блоках или что-то еще, эту строку нужно будет комментировать
+    remove_action( 'wp_enqueue_scripts', 'wp_common_block_scripts_and_styles' );
+
+    // Move the Privacy Policy help notice back under the title field.
+    add_action( 'admin_init', function(){
+        remove_action( 'admin_notices', [ 'WP_Privacy_Policy_Content', 'notice' ] );
+        add_action( 'edit_form_after_title', [ 'WP_Privacy_Policy_Content', 'notice' ] );
+    } );
+}
 
