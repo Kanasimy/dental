@@ -9,6 +9,14 @@ body {
   grid-template-rows: min-content 1fr min-content;
 }
 
+.page-real {
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  position: relative;
+  overflow-x: hidden;
+}
+
 .hidden {
   opacity: 0;
 }
@@ -35,7 +43,7 @@ body {
   text-align: center;
 }
 
-.table {
+.tablepress {
   width: 100%;
   margin: 50px auto;
   box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.05);
@@ -46,14 +54,14 @@ body {
   }
 
   td {
-    border-top: 1px solid $gray-400;
+    border-top: 1px solid $gray-100;
     min-height: 60px;
     vertical-align: middle;
     padding: 20px 30px;
   }
 
-  th {
-    border-bottom: 1px solid $gray-400;
+  thead th {
+    border-bottom: 2px solid $gray-100;
     background-color: #fffbfb;
     color: $danger;
     font-style: italic;

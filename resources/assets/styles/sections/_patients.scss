@@ -1,6 +1,6 @@
 .patients {
   background-color: $gray-100;
-  padding: 40px 0;
+  padding: 40px 10px;
 
   &__li {
     flex-grow: 2;
@@ -11,6 +11,12 @@
     display: flex;
     align-items: flex-end;
 
+    @media screen and (max-width: map-get($grid-breakpoints, "md")) {
+      font-size: 18px;
+      height: 46px;
+      line-height: 1;
+    }
+
     &::after {
       content: "";
       height: 2px;
@@ -20,6 +26,10 @@
       display: block;
       position: absolute;
       background-color: $danger;
+
+      @media screen and (max-width: map-get($grid-breakpoints, "md")) {
+        top: 50px;
+      }
     }
 
     &::before {
@@ -32,15 +42,25 @@
       display: block;
       position: absolute;
       background-color: $danger;
+
+      @media screen and (max-width: map-get($grid-breakpoints, "md")) {
+        top: 42px;
+      }
     }
   }
 
   &__list {
     list-style: none;
+    padding: 0;
+    margin: 0;
 
     li {
       height: 146px;
       display: flex;
+
+      @media screen and (max-width: map-get($grid-breakpoints, "md")) {
+        height: 100px;
+      }
     }
 
     li:nth-child(even) {
@@ -72,6 +92,12 @@
     flex-shrink: 0;
     flex-basis: 146px;
 
+    @media screen and (max-width: map-get($grid-breakpoints, "md")) {
+      height: 100px;
+      width: 100px;
+      flex-basis: 100px;
+    }
+
     &::before {
       position: absolute;
       bottom: 0;
@@ -84,6 +110,12 @@
       border-bottom: 2px solid $danger;
       border-left: 2px solid $danger;
       border-right: 2px solid $danger;
+
+      @media screen and (max-width: map-get($grid-breakpoints, "md")) {
+        height: 50px;
+        width: 100px;
+        border-radius: 0 0 50px 50px;
+      }
     }
 
     &::after {
@@ -95,6 +127,12 @@
       height: 114px;
       z-index: -10;
       display: inline-block;
+
+      @media screen and (max-width: map-get($grid-breakpoints, "md")) {
+        border-radius: 40px;
+        width: 80px;
+        height: 80px;
+      }
     }
   }
 }

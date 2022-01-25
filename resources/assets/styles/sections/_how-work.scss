@@ -1,12 +1,22 @@
 .how-work {
   padding: 80px 0 65px 0;
   background: $gray-100;
+  max-width: 97vw;
 
   &__shema {
     position: relative;
     height: 457px;
     width: 724px;
     margin: 40px auto;
+
+    @media screen and (max-width: map-get($grid-breakpoints, "lg")) {
+      height: auto;
+      width: 60%;
+
+      img {
+        width: 100%;
+      }
+    }
   }
 
   &__list {
@@ -15,38 +25,80 @@
     font-size: 20px;
     line-height: 1.2;
 
+    @media screen and (max-width: map-get($grid-breakpoints, "lg")) {
+      font-size: 16px;
+    }
+
     span {
       color: $danger;
       padding-right: 7px;
       font-weight: bold;
     }
 
-    li:first-child {
+    li {
       position: absolute;
-      left: -144px;
-      top: 235px;
+    }
+
+    li:first-child {
+      left: -20%;
+      top: 51%;
       width: 200px;
     }
 
     li:nth-child(2) {
-      position: absolute;
-      left: -14px;
-      top: 465px;
+      left: -1%;
+      top: 100%;
       width: 204px;
     }
 
     li:nth-child(3) {
-      position: absolute;
-      left: 528px;
-      top: 465px;
+      left: 74%;
+      top: 100%;
       width: 227px;
     }
 
     li:nth-child(4) {
-      position: absolute;
-      right: -144px;
-      top: 243px;
+      right: -20%;
+      top: 51%;
       width: 200px;
+    }
+  }
+
+  @media screen and (max-width: map-get($grid-breakpoints, "md")) {
+    img {
+      display: none;
+    }
+
+    &__list {
+      li {
+        margin-bottom: 15px;
+        position: static;
+        width: 100% !important;
+
+        &::before {
+          content: "";
+          display: block;
+          width: 173px;
+          height: 174px;
+          margin: 10px auto;
+        }
+      }
+
+      li:first-child::before {
+        background-image: url("http://ch82371-wordpress-5.tw1.ru/wp-content/uploads/2022/01/1.png");
+      }
+
+      li:nth-child(2)::before {
+        background-image: url("http://ch82371-wordpress-5.tw1.ru/wp-content/uploads/2022/01/2.png");
+      }
+
+      li:nth-child(3)::before {
+        background-image: url("http://ch82371-wordpress-5.tw1.ru/wp-content/uploads/2022/01/3.png");
+      }
+
+      li:nth-child(4)::before {
+        background-image: url("http://ch82371-wordpress-5.tw1.ru/wp-content/uploads/2022/01/4.png");
+      }
     }
   }
 }

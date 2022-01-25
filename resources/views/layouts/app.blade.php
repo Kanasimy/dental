@@ -3,6 +3,7 @@
   @include('partials.head')
   <body @php body_class() @endphp>
     @php do_action('get_header') @endphp
+    <div class="page-real">
     @include('partials.header')
     <div class="wrap" role="document">
       <div class="content">
@@ -18,6 +19,7 @@
     </div>
     @php do_action('get_footer') @endphp
     @include('partials.footer')
+    </div>
     @php wp_footer() @endphp
   </body>
 </html>

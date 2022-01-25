@@ -50,18 +50,8 @@
         @endwhile
       </div>
     </div>
-    <div class="about__gallery">
-      <a class="about__img" href=""><img src="@asset('images/real-life_35.jpg')" alt=""></a>
-      <a class="about__img" href=""><img src="@asset('images/real-life_37.jpg')" alt=""></a>
-      <a class="about__img" href=""><img src="@asset('images/real-life_39.jpg')" alt=""></a>
-      <a class="about__img" href=""><img src="@asset('images/real-life_41.jpg')" alt=""></a>
-
-      <a class="about__img" href=""><img src="@asset('images/real-life_41.jpg')" alt=""></a>
-      <a class="about__img" href=""><img src="@asset('images/real-life_39.jpg')" alt=""></a>
-      <a class="about__img" href=""><img src="@asset('images/real-life_37.jpg')" alt=""></a>
-      <a class="about__img" href=""><img src="@asset('images/real-life_35.jpg')" alt=""></a>
-    </div>
-    <!-- /.about__gallery --></section>
+    @include('/partials/gallery')
+</section>
 
   @include('/partials/free-advice')
 

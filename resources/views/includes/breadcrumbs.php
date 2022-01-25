@@ -11,9 +11,9 @@ function breadcrumbs()
 
     if (is_single()) { // записи
       $terms = wp_get_object_terms($id, 'services');
-      $term_id = $terms[0]->parent;
-      $term_link = get_term_link($term_id, 'services');
-      echo '<a href="'. $term_link .'">'. get_term_by('id', $term_id, 'services') -> name . '</a>';
+      $term_link = get_term_link($terms[0]->term_id, 'services');
+      echo '<a href="'. $term_link .'">';
+      echo $terms[0]->name . '</a>';
 
       echo $separator;
 

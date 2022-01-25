@@ -3,7 +3,7 @@
   padding: 40px 0;
 }
 
-.table--prices {
+.tablepress {
   td:first-child {
     width: 60%;
     text-align: center;
@@ -12,6 +12,7 @@
   td:nth-child(2) {
     width: 40%;
     text-align: right;
+    border-left: 2px solid $gray-100;
 
     .btn {
       margin-left: 40px;

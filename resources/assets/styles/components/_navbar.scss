@@ -9,7 +9,7 @@
   color: $dark;
   font-size: 20px;
   font-weight: bold;
-  padding: 0.7rem 1rem;
+  padding: 0.7rem 1rem 0.7rem 0;
 
   &:hover {
     color: $white;
@@ -19,13 +19,8 @@
 
 .navbar {
   border-top: 1px solid $gray-300;
-  padding: 0;
 
-  .navbar-nav {
-    width: 100%;
-  }
-
-  .custom-logo-link {
+  .navbar-brand {
     @include media-breakpoint-up(xl) {
       display: none;
     }
@@ -34,5 +29,9 @@
       display: none;
     }
   }
+}
+
+.navbar-expand-lg .navbar-nav {
+  width: 100%;
 }
 

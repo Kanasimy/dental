@@ -3,6 +3,14 @@
   padding: 40px 0;
 
   &__slider {
-    margin-top: 40px;
+    margin: 40px auto;
+
+    @media screen and (max-width: map-get($grid-breakpoints, "md")) {
+      max-width: 210px;
+    }
+
+    &__img {
+      max-width: 210px;
+    }
   }
 }

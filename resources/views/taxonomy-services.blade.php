@@ -1,6 +1,6 @@
 @extends('layouts.app')
 @section('content')
-  <div class="container">
+  <div class="container-lg">
     <div class="breadcrumbs">@php breadcrumbs(); @endphp</div>
   @php if(isset($service_slider)) {
   $i = 0;
@@ -53,18 +53,8 @@
       {!! html_entity_decode($description) !!}
       </div>
     </div>
-    <div class="about__gallery">
-      <a class="about__img" href=""><img src="@asset('images/real-life_35.jpg')" alt=""></a>
-      <a class="about__img" href=""><img src="@asset('images/real-life_37.jpg')" alt=""></a>
-      <a class="about__img" href=""><img src="@asset('images/real-life_39.jpg')" alt=""></a>
-      <a class="about__img" href=""><img src="@asset('images/real-life_41.jpg')" alt=""></a>
-
-      <a class="about__img" href=""><img src="@asset('images/real-life_41.jpg')" alt=""></a>
-      <a class="about__img" href=""><img src="@asset('images/real-life_39.jpg')" alt=""></a>
-      <a class="about__img" href=""><img src="@asset('images/real-life_37.jpg')" alt=""></a>
-      <a class="about__img" href=""><img src="@asset('images/real-life_35.jpg')" alt=""></a>
-    </div>
-    <!-- /.about__gallery --></section>
+    @php echo do_shortcode('[gallery size="full" columns="0" link="file" ids="518,519,520,517,518,519,520,517"]') @endphp
+  </section>
 
   @include('/partials/free-advice')
 
@@ -76,10 +66,10 @@
       <div class="container-fix">
         @foreach($staff_service as $person)
           <div class="row staff__item animate">
-            <div class="col-lg-3 p-0">
-              <img src="@php echo wp_get_attachment_image_url( $person[ 'photo' ],"full" );@endphp" alt="{{ $person[ 'title' ] }}">
+            <div class="col-sm-3 p-0">
+              <img class="img-fluid" src="@php echo wp_get_attachment_image_url( $person[ 'photo' ],"full" );@endphp" alt="{{ $person[ 'title' ] }}">
             </div>
-            <div class="col-lg-9 p-0 staff__description">
+            <div class="col-sm-9 p-0 staff__description">
               <h4 class="staff__name">{{ $person[ 'title' ] }}</h4>
               <div class="staff__year"><span>Стаж:</span> {{ $person[ 'experience' ] }}</div>
               <div class="staff__info"><span>Подробнее:</span>

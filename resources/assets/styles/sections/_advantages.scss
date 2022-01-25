@@ -5,8 +5,6 @@
   &__scheme {
     position: relative;
     margin: 0 auto;
-    width: 1148px;
-    height: 538px;
   }
 
   &__list {
@@ -14,32 +12,138 @@
     font-size: 20px;
     text-align: center;
     line-height: 1.1;
+    padding: 0;
+    margin: 0;
+
+    li {
+      position: absolute;
+    }
 
     li:first-child {
-      position: absolute;
-      top: 24px;
-      left: 55px;
+      top: 5%;
+      left: 5%;
       width: 210px;
     }
 
     li:nth-child(2) {
-      position: absolute;
-      bottom: 97px;
+      bottom: 18%;
       width: 232px;
     }
 
     li:nth-child(3) {
-      position: absolute;
-      top: 24px;
-      right: 26px;
+      top: 5%;
+      right: 3%;
       width: 270px;
     }
 
     li:nth-child(4) {
-      position: absolute;
-      bottom: 97px;
-      right: 32px;
+      bottom: 18%;
+      right: 3%;
       width: 266px;
+    }
+  }
+
+  @media screen and (max-width: map-get($grid-breakpoints, "lg")) {
+    &__img {
+      width: 100%;
+    }
+
+    &__list {
+      font-size: 16px;
+
+      li:first-child {
+        top: 5%;
+        left: 0;
+        width: 210px;
+      }
+
+      li:nth-child(2) {
+        bottom: 18%;
+        left: 0;
+        width: 232px;
+      }
+
+      li:nth-child(3) {
+        top: 5%;
+        right: 0;
+        width: 270px;
+      }
+
+      li:nth-child(4) {
+        bottom: 18%;
+        right: 0;
+        width: 30%;
+      }
+    }
+  }
+
+  @media screen and (max-width: map-get($grid-breakpoints, "lg")) {
+    &__img {
+      width: 100%;
+    }
+
+    &__list {
+      li:first-child {
+        top: 3%;
+        left: 0;
+        width: 25%;
+      }
+
+      li:nth-child(2) {
+        bottom: 18%;
+        left: 0;
+        width: 26%;
+      }
+
+      li:nth-child(3) {
+        top: 3%;
+        right: 0;
+        width: 30%;
+      }
+
+      li:nth-child(4) {
+        bottom: 18%;
+        right: 0;
+        width: 30%;
+      }
+    }
+  }
+
+  @media screen and (max-width: map-get($grid-breakpoints, "sm")) {
+    &__img {
+      display: none;
+    }
+
+    &__list {
+      li {
+        position: static;
+        width: 100% !important;
+
+        &::before {
+          display: block;
+          margin: 10px auto;
+          width: 74px;
+          height: 74px;
+          content: "";
+        }
+      }
+
+      li:first-child::before {
+        background-image: url("http://ch82371-wordpress-5.tw1.ru/wp-content/uploads/2022/01/no-alcohol.png");
+      }
+
+      li:nth-child(2)::before {
+        background-image: url("http://ch82371-wordpress-5.tw1.ru/wp-content/uploads/2022/01/people.png");
+      }
+
+      li:nth-child(3)::before {
+        background-image: url("http://ch82371-wordpress-5.tw1.ru/wp-content/uploads/2022/01/24-hours.png");
+      }
+
+      li:nth-child(4)::before {
+        background-image: url("http://ch82371-wordpress-5.tw1.ru/wp-content/uploads/2022/01/prescription11.png");
+        width: 52px;
+      }
     }
   }
 }
