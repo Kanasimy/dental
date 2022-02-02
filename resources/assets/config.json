@@ -9,7 +9,7 @@
     ]
   },
   "publicPath": "/wp-content/themes/real-life",
-  "devUrl": "http://ch82371-wordpress-5.tw1.ru",
+  "devUrl": "http://real.trust-finans.ru/",
   "proxyUrl": "http://localhost:3000",
   "cacheBusting": "[name]_[hash:8]",
   "watch": [
