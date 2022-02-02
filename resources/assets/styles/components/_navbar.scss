@@ -1,3 +1,42 @@
+.dropdown-btn {
+  display: grid;
+  grid-template-columns: 1fr 38px;
+  grid-template-areas:
+    "link btn"
+    "list list";
+}
+
+.dropdown-btn > a {
+  grid-area: link;
+}
+
+.dropdown-btn .btn {
+  grid-area: btn;
+  margin-top: -1px;
+  margin-bottom: -1px;
+}
+
+.dropdown-menu {
+  padding: 0;
+  border-radius: 0;
+}
+
+.dropdown-menu .dropdown-menu {
+  left: 100%;
+}
+
+.dropdown-btn .dropdown-menu {
+  grid-area: list;
+}
+
+.dropdown-menu .menu-item {
+  border-top: 1px solid rgba(0, 0, 0, 0.15);
+
+  &:first-child {
+    border-top: none;
+  }
+}
+
 .navbar-light .navbar-nav.nav li {
   @extend .nav-item;
 }
@@ -9,7 +48,8 @@
   color: $dark;
   font-size: 20px;
   font-weight: bold;
-  padding: 0.7rem 1rem 0.7rem 0;
+  padding: 0.7rem 1rem 0.7rem 1rem;
+  white-space: nowrap;
 
   &:hover {
     color: $white;
@@ -34,4 +74,3 @@
 .navbar-expand-lg .navbar-nav {
   width: 100%;
 }
-

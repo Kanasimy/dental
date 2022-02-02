@@ -8,17 +8,19 @@
     </button>
     @if (has_nav_menu('primary_navigation'))
       {!!
-        wp_nav_menu( array(
-          'theme_location'  => 'primary_navigation',
-          'depth'           => 2,
-          'container'       => 'div',
-          'container_id'    => 'navbar'.$namePartials,
-          'container_class' => 'collapse navbar-collapse ',
-          'menu_class'      => 'nav navbar-nav d-flex justify-content-between',
-          'fallback_cb'     => 'WP_Bootstrap_Navwalker::fallback',
-          'walker'          => new WP_Bootstrap_Navwalker()
-        ) );
-    !!}
+
+wp_nav_menu( array(
+    'theme_location'  => 'primary_navigation',
+    'depth'           => 3, // 1 = no dropdowns, 2 = with dropdowns.
+    'container'       => 'div',
+    'container_id'    => 'navbar'.$namePartials,
+    'container_class' => 'collapse navbar-collapse ',
+    'menu_class'      => 'nav navbar-nav d-flex justify-content-between',
+    'items_wrap'      => '<ul id="%1$s" class="%2$s">%3$s</ul>',
+    'walker'          => new Real_Walker_Nav_Menu()
+) );
+
+!!}
     @endif
   </nav>
 </div>

@@ -19,7 +19,7 @@
           <img src="@php echo wp_get_attachment_image_url( $slide[ 'photo' ],"full" );@endphp" class="img-fluid" alt="" >
           <div class="carousel-caption d-none d-md-block">
             <h2 class="service-slider__header">{{ $slide[ 'title' ] }}</h2>
-            <a class="btn-order btn-order--servises" href="href="{{ $slide[ 'href' ] }}">
+            <a class="btn-order btn-order--servises" href="{{ $slide[ 'href' ] }}">
               <span class="text">{{ $slide[ 'button' ] }}</span>
               <div class="icon-container">
                 <div class="icon icon--left">
