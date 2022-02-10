@@ -8,7 +8,13 @@
     box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.05);
     margin-top: 30px;
 
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: map-get($grid-breakpoints, "md")) {
+      img {
+        padding: 15px;
+      }
+    }
+
+    @media screen and (max-width: map-get($grid-breakpoints, "sm")) {
       text-align: center;
     }
   }

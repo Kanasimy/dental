@@ -4,6 +4,8 @@
 //Кастомизация переменных
 @import "../common/rl-custom";
 
+$paragraph-margin-bottom: 0.6rem;
+
 // Обязательные
 @import "~bootstrap/scss/variables";
 @import "~bootstrap/scss/mixins";
@@ -95,3 +97,4 @@ $carousel-control-next-icon-bg:      url("data:image/svg+xml,<svg xmlns='http://
 @import "~bootstrap/scss/dropdown";
 @import "~bootstrap/scss/carousel";
 @import "~bootstrap/scss/transitions";
+@import "~bootstrap/scss/alert";

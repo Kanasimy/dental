@@ -60,26 +60,26 @@
         <div class="row servises__list">
           <div class="col-sm-12 col-lg-3">
             <div class="servises__item">
-            <a href=""><img width="224px" src="@asset('images/real-life_09.jpg')" alt="Лечение алкоголизма"></a>
-            <a href="" class="servises__cat">Лечение алкоголизма</a>
+            <a href="https://reallife-clinic.ru/service/lechenie-muzhskogo-alkogolizma/"><img width="224px" src="@asset('images/real-life_09.jpg')" alt="Лечение алкоголизма"></a>
+            <a href="https://reallife-clinic.ru/service/lechenie-muzhskogo-alkogolizma/" class="servises__cat">Лечение алкоголизма</a>
             </div>
           </div>
           <div class="col-sm-12 col-lg-3">
             <div class="servises__item">
-            <a href=""><img width="224px" src="@asset('images/real-life_03.jpg')" alt="Кодирование"></a>
-            <a href="" class="servises__cat">Кодирование</a>
+            <a href="https://reallife-clinic.ru/service/kodirovanie/"><img width="224px" src="@asset('images/real-life_03.jpg')" alt="Кодирование"></a>
+            <a href="https://reallife-clinic.ru/service/kodirovanie/" class="servises__cat">Кодирование</a>
             </div>
           </div>
           <div class="col-sm-12 col-lg-3">
             <div class="servises__item">
-            <a href=""><img width="224px" src="@asset('images/real-life_12.jpg')" alt="Психотерапия"></a>
-            <a href="" class="servises__cat">Психотерапия</a>
+            <a href="https://reallife-clinic.ru/service/psihoterapiya/"><img width="224px" src="@asset('images/real-life_12.jpg')" alt="Психотерапия"></a>
+            <a href="https://reallife-clinic.ru/service/psihoterapiya/" class="servises__cat">Психотерапия</a>
             </div>
           </div>
           <div class="col-sm-12 col-lg-3">
             <div class="servises__item">
-            <a href=""><img width="224px" src="@asset('images/real-life_06.jpg')" alt="Вывод из запоя"></a>
-            <a href="" class="servises__cat">Вывод из запоя</a>
+            <a href="https://reallife-clinic.ru/service/vyvod-iz-zapoya/"><img width="224px" src="@asset('images/real-life_06.jpg')" alt="Вывод из запоя"></a>
+            <a href="https://reallife-clinic.ru/service/vyvod-iz-zapoya/" class="servises__cat">Вывод из запоя</a>
             </div>
           </div>
         </div>
@@ -160,5 +160,7 @@
  </section>
 
   @include('/partials/faq')
+
+  @include('/partials/map')
 
 @endsection

@@ -27,7 +27,7 @@
         </div>
         <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
           <div class="card-body">
-            Some placeholder content for the second accordion panel. This panel is hidden by default.
+            Суть данной кодировки по методу Довженко проста, она заключается в сильном гипнотическом воздействии на больного и ограничивается во времени. После такой процедуры, пациент полностью теряет интерес к употреблению алкоголя на весь срок кодировки.
           </div>
         </div>
       </div>
@@ -41,49 +41,7 @@
         </div>
         <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
           <div class="card-body">
-            And lastly, the placeholder content for the third and final accordion panel. This panel is hidden by default.
-          </div>
-        </div>
-      </div>
-      <div class="card">
-        <div class="card-header" id="headingFive">
-          <h2 class="mb-0">
-            <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-              Вывод из состояния похмелья
-            </button>
-          </h2>
-        </div>
-        <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionExample">
-          <div class="card-body">
-            And lastly, the placeholder content for the third and final accordion panel. This panel is hidden by default.
-          </div>
-        </div>
-      </div>
-      <div class="card">
-        <div class="card-header" id="headingSix">
-          <h2 class="mb-0">
-            <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
-              Вывод из состояния похмелья
-            </button>
-          </h2>
-        </div>
-        <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordionExample">
-          <div class="card-body">
-            And lastly, the placeholder content for the third and final accordion panel. This panel is hidden by default.
-          </div>
-        </div>
-      </div>
-      <div class="card">
-        <div class="card-header" id="headingSeven">
-          <h2 class="mb-0">
-            <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
-              Вывод из состояния похмелья
-            </button>
-          </h2>
-        </div>
-        <div id="collapseThree" class="collapse" aria-labelledby="headingSeven" data-parent="#accordionExample">
-          <div class="card-body">
-            And lastly, the placeholder content for the third and final accordion panel. This panel is hidden by default.
+            В нашей наркологической клинике «Real Life» работают квалифицированные врачи-наркологи, которые могут быстро поставить вас на ноги. Вам не стоит переживать, ведь лечение будет проводиться анонимно, поэтому о вашем заболевании никто не узнает. Мы оказываем такие медицинские услуги на дому или в стационарном отделении.
           </div>
         </div>
       </div>

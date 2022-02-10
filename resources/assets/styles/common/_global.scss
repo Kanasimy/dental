@@ -17,6 +17,15 @@ body {
   overflow-x: hidden;
 }
 
+.page-header {
+  margin: 50px 0 20px;
+}
+
+.strong {
+  font-weight: bold;
+  color: $danger;
+}
+
 .hidden {
   opacity: 0;
 }
@@ -35,15 +44,22 @@ body {
   font-family: Ubuntu, Arial, sans-serif;
 }
 
+.copyright {
+  text-align: center;
+  color: #8e8e8e;
+  font-size: 14px;
+  border-top: 1px solid #dee2e6;
+}
+
 .description-text {
   font-size: 20px;
   font-style: italic;
-  color: $gray-500;
+  color: #8e8e8e;
   margin: 15px auto;
   text-align: center;
 }
 
-.tablepress {
+.table {
   width: 100%;
   margin: 50px auto;
   box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.05);

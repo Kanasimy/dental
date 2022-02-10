@@ -9,7 +9,7 @@
     ]
   },
   "publicPath": "/wp-content/themes/real-life",
-  "devUrl": "http://real.trust-finans.ru/",
+  "devUrl": "https://reallife-clinic.ru/",
   "proxyUrl": "http://localhost:3000",
   "cacheBusting": "[name]_[hash:8]",
   "watch": [

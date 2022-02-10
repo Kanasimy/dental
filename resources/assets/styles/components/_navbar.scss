@@ -19,10 +19,24 @@
 .dropdown-menu {
   padding: 0;
   border-radius: 0;
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.05);
+
+  @media screen and (max-width: map-get($grid-breakpoints, "lg")) {
+    border: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+    background-color: $gray-100;
+    box-shadow: none;
+  }
 }
 
 .dropdown-menu .dropdown-menu {
   left: 100%;
+
+  @media screen and (max-width: map-get($grid-breakpoints, "lg")) {
+    background-color: $white;
+    border-style: none;
+    margin-top: -1px;
+  }
 }
 
 .dropdown-btn .dropdown-menu {
@@ -33,6 +47,22 @@
   border-top: 1px solid rgba(0, 0, 0, 0.15);
 
   &:first-child {
+    border-top: none;
+  }
+}
+
+@media screen and (max-width: map-get($grid-breakpoints, "lg")) {
+  .navbar-light .navbar-nav {
+    border-top: none;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    margin-top: 7px;
+
+    .menu-item {
+      border-top: 1px solid rgba(0, 0, 0, 0.15);
+    }
+  }
+
+  .navbar-light .navbar-nav > .menu-item:first-child {
     border-top: none;
   }
 }
@@ -50,6 +80,8 @@
   font-weight: bold;
   padding: 0.7rem 1rem 0.7rem 1rem;
   white-space: nowrap;
+  margin-top: -1px;
+  margin-bottom: -1px;
 
   &:hover {
     color: $white;

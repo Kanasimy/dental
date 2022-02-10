@@ -9,8 +9,12 @@
 
     &-header {
       .btn-link {
-        color: $body-color;
         font-size: 20px;
+        color: $danger;
+
+        &.collapsed {
+          color: $body-color;
+        }
 
         &::before {
           content: "";

@@ -19,17 +19,17 @@
           <img src="@php echo wp_get_attachment_image_url( $slide[ 'photo' ],"full" );@endphp" class="img-fluid" alt="" >
           <div class="carousel-caption d-none d-md-block">
             <h2 class="service-slider__header">{{ $slide[ 'title' ] }}</h2>
-            <a class="btn-order btn-order--servises" href="{{ $slide[ 'href' ] }}">
+            <a class="btn-order btn-order--servises" href="href="{{ $slide[ 'href' ] }}">
               <span class="text">{{ $slide[ 'button' ] }}</span>
               <div class="icon-container">
                 <div class="icon icon--left">
                   <svg viewBox="0 0 10 5">
-                    <use xlink:href="http://ch82371-wordpress-5.tw1.ru/wp-content/themes/real-life/dist/images/svg/arrow.svg#arrow-right"></use>
+                    <use xlink:href="https://reallife-clinic.ru/wp-content/themes/real-life/dist/images/svg/arrow.svg#arrow-right"></use>
                   </svg>
                 </div>
                 <div class="icon icon--right">
                   <svg viewBox="0 0 10 5">
-                    <use xlink:href="http://ch82371-wordpress-5.tw1.ru/wp-content/themes/real-life/dist/images/svg/arrow.svg#arrow-right"></use>
+                    <use xlink:href="https://reallife-clinic.ru/wp-content/themes/real-life/dist/images/svg/arrow.svg#arrow-right"></use>
                   </svg>
                 </div>
               </div>

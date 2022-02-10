@@ -62,13 +62,15 @@
     list-style: none;
     justify-items: center;
     align-items: center;
-    gap: 30px;
+    gap: 25px;
     padding: 0;
     margin: 0;
 
     @media screen and (max-width: map-get($grid-breakpoints, "lg")) {
       justify-content: space-between;
       grid-area: social;
+      max-width: 200px;
+      margin: 0 auto;
     }
   }
 

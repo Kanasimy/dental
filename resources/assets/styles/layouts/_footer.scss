@@ -1,5 +1,12 @@
 .footer {
   background: $white;
+  border-top: 1px solid #dee2e6;
+  margin-top: 40px;
+
+  .navbar {
+    border-top: none;
+    border-bottom: 1px solid $gray-300;
+  }
 }
 
 .footer .nav li {

@@ -1,3 +1,3 @@
-<div class="page-header container">
-  <h1>{!! App::title() !!}</h1>
+<div class="page-header">
+  <h1 class="header-text">{!! App::title() !!}</h1>
 </div>

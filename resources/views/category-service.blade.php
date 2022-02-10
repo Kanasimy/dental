@@ -24,12 +24,12 @@
               <div class="icon-container">
                 <div class="icon icon--left">
                   <svg viewBox="0 0 10 5">
-                    <use xlink:href="http://ch82371-wordpress-5.tw1.ru/wp-content/themes/real-life/dist/images/svg/arrow.svg#arrow-right"></use>
+                    <use xlink:href="https://reallife-clinic.ru/wp-content/themes/real-life/dist/images/svg/arrow.svg#arrow-right"></use>
                   </svg>
                 </div>
                 <div class="icon icon--right">
                   <svg viewBox="0 0 10 5">
-                    <use xlink:href="http://ch82371-wordpress-5.tw1.ru/wp-content/themes/real-life/dist/images/svg/arrow.svg#arrow-right"></use>
+                    <use xlink:href="https://reallife-clinic.ru/wp-content/themes/real-life/dist/images/svg/arrow.svg#arrow-right"></use>
                   </svg>
                 </div>
               </div>
