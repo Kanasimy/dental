@@ -196,4 +196,8 @@ $btn-block-spacing-y: 0.5rem !default;
   &:active {
     outline: none;
   }
+
+  &:disabled {
+    display: none;
+  }
 }
