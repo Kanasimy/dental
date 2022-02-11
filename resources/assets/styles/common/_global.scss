@@ -64,6 +64,11 @@ body {
   margin: 50px auto;
   box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.05);
 
+  &__wrapper {
+    overflow-x: auto;
+    min-width: 550px;
+  }
+
   tbody {
     background-color: $white;
     font-size: 20px;
